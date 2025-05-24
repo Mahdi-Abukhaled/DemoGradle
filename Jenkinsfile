@@ -5,7 +5,6 @@ pipeline {
             agent {
                 docker {
                     image 'public.ecr.aws/amazoncorretto/amazoncorretto:21'
-                    args '-u root:root'
                     reuseNode true
                 }
             }
